@@ -8,7 +8,7 @@ import Message from './Message';
 import messageTone from './notification.mp3';
 var socket;
 const Chat=()=>{
-    const ENDPOINT='localhost:8000';
+    const ENDPOINT='https://chat-applicationserver.herokuapp.com';
     const location=useLocation();
     const navigate=useNavigate();
     const [messages,setMessages]=useState([]);
@@ -43,7 +43,7 @@ const Chat=()=>{
             socket.off();
         }
 
-    },[ENDPOINT,location.search,navigate]);
+    },[ENDPOINT,location.search]);
 
     const sendMessage=()=>{
         if(message.length===0) return;
