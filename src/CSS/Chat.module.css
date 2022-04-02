@@ -1,0 +1,112 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 0px;
+  }
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #222f3e;
+}
+.innerWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap:2rem;
+}
+.container{
+    width: 50%;
+    background-color: #ffff;
+}
+.info_bar{
+    font-size: 1.5rem;
+    padding:0.5rem;
+    background-color: #2e86de;
+    color:#ffff;
+}
+.input_container{
+    border-top:2px solid #0984e3;
+    margin-top: 1rem;
+    display: flex;
+}
+.input{
+    flex:0.8;
+    padding:0.5rem 1rem;
+    font-size: 1.2rem;
+    outline: none;
+    border:none;
+}
+.btn{
+ flex: 0.2;
+ outline: none;
+ border: none;
+ background-color: #2e86de;
+ color: #ffff;
+ font-size: 1.2rem;
+}
+.webname{
+    font-size: 2rem;
+}
+.messagesContainer{
+    display: flex;
+    flex-direction: column;
+    padding:1rem ;
+    font-size: 1.2rem;
+    height: 60vh;
+    gap:1rem;
+}
+.message_container{
+    padding:0.5rem;
+    border-radius: 15px;
+}
+.justify_right{
+    background-color: #7f8c8d;
+    align-self: flex-end;
+}
+.justify_left{
+    background-color: #54a0ff;
+    align-self: flex-start;
+}
+.message{
+    color:#CAD3C8;
+}
+.scroll_messages{
+    flex:auto;
+    overflow: auto;
+}
+.onlineUsers{
+    width: 15%;
+}
+.title{
+    width: 100%;
+    color:#ffff;
+    background-color:  #2e86de;
+    padding:0.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.users_container{
+    padding:0.5rem 1.5rem ;
+    margin: 0.5rem 0rem;
+    background-color: #ffff;
+    font-size: 1.2rem;
+    list-style:none;
+}
+.users_container li{
+    margin: 0.5rem 0rem;
+}
+.users_container li::before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: green;
+    margin-right: 1rem;
+}
