@@ -43,7 +43,7 @@ const Chat=()=>{
             socket.off();
         }
 
-    },[ENDPOINT,location.search]);
+    },[ENDPOINT,location.search,navigate]);
 
     const sendMessage=()=>{
         if(message.length===0) return;
